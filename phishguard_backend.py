@@ -11,7 +11,12 @@ from datetime import datetime
 import uuid
 import json
 from dotenv import load_dotenv
+import os
 load_dotenv()
+
+# Force reload environment variables
+os.environ.setdefault('SMTP_HOST', 'smtp.sendgrid.net')
+os.environ.setdefault('SMTP_PORT', '587')
 
 # Email sending
 import smtplib
