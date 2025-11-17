@@ -1,1 +1,1 @@
-web: uvicorn phishguard_backend:app --host 0.0.0.0 --port 
+web: uvicorn phishguard_backend:app --host 0.0.0.0 --port ${PORT:-8000}
